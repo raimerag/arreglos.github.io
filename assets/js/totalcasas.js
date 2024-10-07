@@ -6,7 +6,7 @@ const alquiler = [
         ubicacion: '123 Main Street, Anytown, CA 91234',
         habitaciones: '2 Habitaciones |',
         baños:'2 Baños',
-        costo: 2.000,
+        costo: '2.000',
         smoke: false,
         pests: true
     },
@@ -17,7 +17,7 @@ const alquiler = [
         ubicacion: '456 Ocean Avenue, Seaside Town, CA 56789',
         habitaciones: '3 Habitaciones |',
         baños: '3 Baños',
-        costo: 2.500,
+        costo: '2.500',
         smoke: false,
         pests: false
     },
@@ -28,7 +28,7 @@ const alquiler = [
         ubicacion: '123 Main Street, Anytown, CA 91234',
         habitaciones: '2 Habitaciones |',
         baños: '2 Baños',
-        costo: 2.200,
+        costo: '2.200',
         smoke: true,
         pests: true
     },
@@ -39,7 +39,7 @@ const alquiler = [
         ubicacion: '789 Mountain Road, Summit Peaks, CA 23456',
         habitaciones: '2 Habitaciones |',
         baños: '1 Baños',
-        costo: 1.200,
+        costo: '1.200',
         smoke: true,
         pests: true
     },
@@ -50,7 +50,7 @@ const alquiler = [
         ubicacion: '789 Mountain Road, Summit Peaks, CA 23456',
         habitaciones: '2 Habitaciones |',
         baños: '1 Baños',
-        costo: 1.200,
+        costo: '1.400',
         smoke: true,
         pests: true
     }
@@ -64,7 +64,7 @@ const ventas = [
         ubicacion: '123 Luxury Lane, Prestige Suburb, CA 45678',
         habitaciones: '4 Habitaciones |',
         baños:'4 Baños',
-        costo: 5.000,
+        costo: '5.000',
         smoke: false,
         pests: false
     },
@@ -75,7 +75,7 @@ const ventas = [
         ubicacion: '789 Mountain Road, Summit Peaks, CA 23456',
         habitaciones: '2 Habitaciones |',
         baños: '1 Baños',
-        costo: 1.200,
+        costo: '3.500',
         smoke: true,
         pests: true
     },
@@ -86,7 +86,7 @@ const ventas = [
         ubicacion: '567 Skyline Avenue,Skyview City, CA 56789',
         habitaciones: '3 Habitaciones |',
         baños: '3 Baños',
-        costo: 4.500,
+        costo: '4.500',
         smoke: false,
         pests: true
     },
@@ -97,7 +97,7 @@ const ventas = [
       ubicacion: '567 Skyline Avenue,Skyview City, CA 56789',
       habitaciones: '3 Habitaciones |',
       baños: '3 Baños',
-      costo: 4.500,
+      costo: '5.700',
       smoke: false,
       pests: true
     },
@@ -108,7 +108,7 @@ const ventas = [
       ubicacion: '789 Mountain Road, Summit Peaks, CA 23456',
       habitaciones: '2 Habitaciones |',
       baños: '1 Baños',
-      costo: 1.200,
+      costo: '1.400',
       smoke: true,
       pests: true
     }
