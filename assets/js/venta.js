@@ -1,26 +1,24 @@
-let contenedorVentas = document.querySelector("#contenedor-ventas")
-  
-    for(let casas of ventas){
-      let fumar = ''
-      let mascotas = ''
-       
-        if(casas.smoke === false){
-            fumar = ' no se puede fumar'
-        }
-        else{
-            fumar = ' si se puede fumar'
-        }
+let contenedorVentas = document.querySelector("#contenedor-ventas");
 
-        if(casas.mascotas === false){
-            mascotas = ' No se permiten mascotas'
-        }
-        else{
-            mascotas = ' Mascotas permitidas'
-        }
+for (let casas of ventas) {
+  let fumar = "";
+  let mascotas = "";
 
-        let nuevoDiv = document.createElement("div")
-        nuevoDiv.classList.add("col-md-4","mb-4")
-        nuevoDiv.innerHTML =`<div class="card">
+  if (casas.smoke === false) {
+    fumar = " No se puede fumar";
+  } else {
+    fumar = " Si se puede fumar";
+  }
+
+  if (casas.pets === false) {
+    mascotas = " No se permiten mascotas";
+  } else {
+    mascotas = " Si se permiten Mascotas";
+  }
+
+  let nuevoDiv = document.createElement("div");
+  nuevoDiv.classList.add("col-md-4", "mb-4");
+  nuevoDiv.innerHTML = `<div class="card">
               <img
                 src=${casas.src}
                 class="card-img-top"
@@ -40,16 +38,27 @@ let contenedorVentas = document.querySelector("#contenedor-ventas")
                   <i class="fas fa-bed"></i> ${casas.habitaciones}
                   <i class="fas fa-bath"></i> ${casas.baños}
                 </p>
-                <p><i class="fas fa-dollar-sign"></i>${casas.costo}</p>
-                <p class="text-danger">
-                  <i class="fas fa-smoking-ban"></i>${fumar}
+                <p class='fw-bold'><i class="fas fa-dollar-sign"></i>${
+                  casas.costo
+                }</p>
+                  ${
+                    casas.smoke
+                      ? `<p class="text-success">
+                  <i class="fas fa-solid fa-joint"></i>${fumar}`
+                      : `<p class="text-danger">
+                  <i class="fas fa-solid fa-ban-smoking"></i>${fumar}`
+                  }
+              
                 </p>
-                <p class="text-danger">
-                  <i class="fa-solid fa-ban"></i> ${mascotas}
-                </p>
+                   ${
+                     casas.pets
+                       ? `<p class="text-success">
+                  <i class="fas fa-solid fa-paw"></i>${mascotas}`
+                       : `<p class="text-danger">
+                  <i class="fas fa-solid fa-ban"></i>${mascotas}`
+                   }
               </div>
             </div>
-          </div>`
-            contenedorVentas.appendChild(nuevoDiv)    
-        }
-    
+          </div>`;
+  contenedorVentas.appendChild(nuevoDiv);
+}
